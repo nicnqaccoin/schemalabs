@@ -1,0 +1,20 @@
+{
+  "name": "schemalabs-local-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser-local JSON Schema validation and conservative schema-change review",
+  "scripts": {
+    "test": "node --test tests/engine.test.js",
+    "test:coverage": "node --test --experimental-test-coverage tests/engine.test.js",
+    "build": "esbuild src/engine.js --bundle --format=esm --platform=browser --target=es2020 --minify --legal-comments=none --outfile=public/assets/engine.js"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "esbuild": "^0.28.2"
+  }
+}

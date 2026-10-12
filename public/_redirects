@@ -1,0 +1,2 @@
+# www-to-apex 301 is configured by the Cloudflare zone's canonical hostname rule.
+/index.html / 301

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://schemalabs.co.uk/sitemap.xml
